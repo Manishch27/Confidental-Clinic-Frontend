@@ -3,12 +3,16 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import {Award, Clock } from 'lucide-react'
+import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
+import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
+import drAnuradha from "@/public/dr-anuradha-solanki.jpeg"
+
 
 const doctors = [
   {
     name: "Dr. Pankaj Chaudhary",
     edu: "B.D.S, M.D.S",
-    image: "https://i.ibb.co/vVcV3zN/Whats-App-Image-2024-12-12-at-18-32-39.jpg?height=400&width=300",
+    image: drPankaj,
     description: "Expert in dental surgery and implants, delivering precise care with over 10 years of experience.",
     specialties: ["Dental Surgeon", "Dental Implants"],
     experience: 10,
@@ -16,7 +20,7 @@ const doctors = [
   {
     name: "Dr. Sunil Fauzdar",
     edu: "B.D.S, M.D.S",
-    image: "https://i.ibb.co/pw0rLYZ/Whats-App-Image-2024-12-23-at-20-04-46.jpg?height=400&width=300",
+    image: drSunil,
     description: "Specializes in oral and facial surgery, ensuring positive and gentle patient experiences.",
     specialties: ["Oral", "maxillofacial surgeon"],
     experience: 12,
@@ -24,7 +28,7 @@ const doctors = [
   {
     name: "Dr. Anuradha Solanki",
     edu: "B.D.S, M.D.S",
-    image: "https://i.ibb.co/J7b7gKj/Whats-App-Image-2024-12-23-at-20-06-22.jpg?height=400&width=300",
+    image: drAnuradha,
     description: "Dr. Anuradha Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     specialties: ["Dental Surgeon", "Dental Implants"],
     experience: 8,

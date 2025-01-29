@@ -6,6 +6,8 @@ import { useTheme } from "next-themes"
 import { Phone, Clock, Menu, Sun, Moon, ChevronRight, Mail, MapPin, Home, Info, Stethoscope, ImageIcon, Briefcase, MessageSquare, Calendar } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import logo from "@/public/logo.webp"
+import darkLogo from "@/public/logo-dark.webp"
 import {
   Sheet,
   SheetContent,
@@ -35,7 +37,7 @@ export function Navbar() {
   const { theme, setTheme, systemTheme } = useTheme()
   const pathname = usePathname()
   const [currentLogo, setCurrentLogo] = useState(
-    "https://next-app-rose-rho.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FConfiLogo.889dcac8.png&w=1920&q=75"
+    darkLogo
   )
   const [mounted, setMounted] = useState(false)
 
@@ -58,8 +60,7 @@ export function Navbar() {
     if (mounted) {
       const currentTheme = theme === 'system' ? systemTheme : theme
       setCurrentLogo(currentTheme === "dark"
-        ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp_Image_2024-12-30_at_10.25.48-removebg-ZR3S2Pty8c61LM6zk9JOMgPt9qT5UL.png"
-        : "https://next-app-rose-rho.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FConfiLogo.889dcac8.png&w=1920&q=75"
+        ? darkLogo : logo
       )
     }
   }, [theme, systemTheme, mounted])

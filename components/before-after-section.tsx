@@ -4,10 +4,14 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { ArrowLeftRight } from 'lucide-react';
+import patient1Before from "@/public/patient1-before.jpeg";
+import patient1After from "@/public/patient1-after.jpeg";
+import patient2Before from "@/public/patient2-before.jpeg";
+import patient2After from "@/public/patient2-after.jpeg";
 
 interface BeforeAfterSliderProps {
-  beforeImage: string;
-  afterImage: string;
+  beforeImage: string | StaticImageData;
+  afterImage: string | StaticImageData;
   beforeAlt: string;
   afterAlt: string;
   title: string;
@@ -68,14 +72,14 @@ function BeforeAfterSlider({ beforeImage, afterImage, beforeAlt, afterAlt, title
       className="relative overflow-hidden rounded-2xl shadow-lg"
     >
       <div className="relative h-[400px] w-full overflow-hidden">
-        <Image src={afterImage} alt={afterAlt} fill className="object-cover" />
+        <Image src={afterImage} alt={afterAlt} fill className="object-cover focus:outline-none" />
         <div
           className="absolute inset-0 transition-transform duration-500 ease-in-out"
           style={{
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)`,
           }}
         >
-          <Image src={beforeImage} alt={beforeAlt} fill className="object-cover" />
+          <Image src={beforeImage} alt={beforeAlt} fill className="object-cover focus:outline-none" />
         </div>
         <div
           className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
@@ -101,14 +105,14 @@ export function BeforeAfterSection() {
      {
       title: "Smile Makeover",
       description: "Complete transformation with veneers and whitening",
-      beforeImage: "https://i.ibb.co/mbr5FSK/Whats-App-Image-2024-12-23-at-20-12-45.jpg",
-      afterImage: "https://i.ibb.co/KztB917/Whats-App-Image-2024-12-23-at-20-12-45-1.jpg",
+      beforeImage: patient1Before,
+      afterImage: patient1After,
     },
     {
       title: "Dental Implants",
       description: "Restoring missing teeth with natural-looking implants",
-      beforeImage: "https://i.ibb.co/x1DTYfX/Whats-App-Image-2024-12-23-at-20-12-47.jpg",
-      afterImage: "https://i.ibb.co/kc30Zkk/Whats-App-Image-2024-12-24-at-07-47-27.jpg",
+      beforeImage: patient2Before,
+      afterImage: patient2After,
     },
     {
       title: "Orthodontic Treatment",

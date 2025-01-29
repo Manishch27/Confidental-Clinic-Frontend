@@ -8,28 +8,33 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Layout } from "@/components/layout"
 import Link from "next/link"
+import image1 from "@/public/about-image1.jpeg";
+import image2 from "@/public/about-image2.jpeg";
+import image3 from "@/public/about-image3.jpeg";
+import image4 from "@/public/about-clinic.jpeg";
+
 
 const galleryImages = [
   { 
-    src: "https://i.ibb.co/cyVyPvg/Whats-App-Image-2024-12-12-at-18-33-56.jpg", 
+    src: image1, 
     alt: "Balajipuram Clinic Reception", 
     location: "Balajipuram",
     category: "Interior"
   },
   { 
-    src: "https://i.ibb.co/vkkzQt1/Whats-App-Image-2024-12-12-at-18-33-59.jpg", 
+    src: image2, 
     alt: "Township Clinic Dental Chair", 
     location: "Township",
     category: "Equipment"
   },
   { 
-    src: "https://i.ibb.co/dLrHLSh/Whats-App-Image-2024-12-12-at-18-33-58.jpg", 
+    src: image3, 
     alt: "Balajipuram Clinic X-ray Room", 
     location: "Balajipuram",
     category: "Equipment"
   },
   { 
-    src: "https://i.ibb.co/qxvpT4Z/Whats-App-Image-2024-12-12-at-10-44-39.jpg", 
+    src: image4, 
     alt: "Township Clinic Waiting Area", 
     location: "Township",
     category: "Interior"

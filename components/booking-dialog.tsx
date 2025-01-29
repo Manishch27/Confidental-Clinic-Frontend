@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
-import { User2, Phone, Building2, X } from 'lucide-react'
+import { User2, Phone, Building2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import axios from "axios"
 import {
   Select,
   SelectContent,
@@ -21,16 +21,17 @@ import {
 } from "@/components/ui/dialog"
 import { useForm } from "react-hook-form"
 import toast from 'react-hot-toast'
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 type FormData = {
-  name: string
+  fullName: string
   phone: string
-  location: string
+  nearestClinic: string
 }
 
 export function BookingDialog() {
   const [open, setOpen] = useState(false)
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>()
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm<FormData>()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [hasSubmitted, setHasSubmitted] = useState(false)
 
@@ -46,14 +47,21 @@ export function BookingDialog() {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    console.log(data)
+    try {
+      const response = await axios.post(`${API_URL}api/v1/form/popup-form`, data)
+      if (response.status === 200) {
+        toast.success("Booking request submitted successfully!")
+        setHasSubmitted(true)
+        localStorage.setItem('hasSeenBookingDialog', 'true')
+        setOpen(false)
+      } else {
+        toast.error("Failed to submit booking. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error submitting booking:", error)
+      toast.error("An error occurred while submitting your booking.")
+    }
     setIsSubmitting(false)
-    toast.success("Booking request submitted successfully!")
-    setOpen(false)
-    setHasSubmitted(true)
-    localStorage.setItem('hasSeenBookingDialog', 'true')
   }
 
   if (hasSubmitted) {
@@ -63,7 +71,7 @@ export function BookingDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className="sm:max-w-md mx-auto rounded-3xl overflow-hidden pt-8">
-          <DialogHeader>
+        <DialogHeader>
           <DialogTitle className="text-center text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
             Exclusive Offer!
           </DialogTitle>
@@ -73,16 +81,16 @@ export function BookingDialog() {
         </DialogHeader>
         <form onSubmit={handleSubmit(onSubmit)} className="mt-4 space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="name">Full Name</Label>
+            <Label htmlFor="fullName">Full Name</Label>
             <div className="relative">
               <User2 className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
               <Input
-                id="name"
+                id="fullName"
                 className="pl-10"
-                {...register("name", { required: "Name is required" })}
+                {...register("fullName", { required: "Name is required" })}
               />
             </div>
-            {errors.name && <p className="text-sm text-red-500">{errors.name.message}</p>}
+            {errors.fullName && <p className="text-sm text-red-500">{errors.fullName.message}</p>}
           </div>
           <div className="space-y-2">
             <Label htmlFor="phone">Phone Number</Label>
@@ -98,18 +106,20 @@ export function BookingDialog() {
             {errors.phone && <p className="text-sm text-red-500">{errors.phone.message}</p>}
           </div>
           <div className="space-y-2">
-            <Label htmlFor="location">Nearest Clinic Location</Label>
-            <Select onValueChange={(value) => register("location").onChange({ target: { value } })}>
-              <SelectTrigger id="location" className="pl-10">
+            <Label htmlFor="nearestClinic">Nearest Clinic Location</Label>
+            <Select onValueChange={(value) => setValue("nearestClinic", value)}>
+              <SelectTrigger id="nearestClinic" className="pl-10">
                 <Building2 className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
-                <SelectValue placeholder="Select location" />
+                <SelectValue placeholder="Select Location" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="township">Township</SelectItem>
                 <SelectItem value="balajipuram">Balajipuram</SelectItem>
               </SelectContent>
             </Select>
-            {errors.location && <p className="text-sm text-red-500">{errors.location.message}</p>}
+            {/* Hidden input to ensure react-hook-form tracks the field */}
+            <input type="hidden" {...register("nearestClinic", { required: "Nearest clinic is required" })} />
+            {errors.nearestClinic && <p className="text-sm text-red-500">{errors.nearestClinic.message}</p>}
           </div>
           <Button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-blue-400" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit"}
@@ -119,4 +129,3 @@ export function BookingDialog() {
     </Dialog>
   )
 }
-

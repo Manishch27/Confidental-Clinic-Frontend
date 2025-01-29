@@ -8,48 +8,56 @@ import { Button } from "@/components/ui/button"
 import { Layout } from "@/components/layout"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle} from "@/components/ui/dialog"
+import generalDentistry from "@/public/general-dentistry.webp"
+import cosmeticDentistry from "@/public/cosmetic-dentistry.webp"
+import dentalImplants from "@/public/dental-implants.webp"
+import orthodontics from "@/public/orthodontics.webp"
+import pediatricDentistry from "@/public/pediatric-dentistry.webp"
+import oralSurgery from "@/public/oral-surgery.webp"
+
+
 
 const services = [
   {
     title: "General Dentistry",
     description: "Comprehensive dental care including cleanings, fillings, and preventive treatments for optimal oral health.",
     features: ["Regular Checkups", "Dental Cleaning", "Cavity Prevention", "Oral Health Education"],
-    image: "https://i.ibb.co/cyPwvVk/DALL-E-2024-12-25-08-08-08-A-visually-appealing-and-professional-dental-themed-image-representing-Ge.webp",
+    image: generalDentistry,
     longDescription: "Our general dentistry services form the foundation of good oral health. We offer comprehensive care that includes regular checkups, professional cleanings, and preventive treatments. Our team is dedicated to educating patients about proper oral hygiene practices and early detection of potential issues. From filling cavities to performing routine examinations, we ensure your teeth and gums stay healthy for years to come."
   },
   {
     title: "Cosmetic Dentistry",
     description: "Transform your smile with our advanced cosmetic dental procedures and expert care.",
     features: ["Teeth Whitening", "Veneers", "Bonding", "Smile Makeover"],
-    image: "https://i.ibb.co/Swg7s8m/DALL-E-2024-12-25-08-08-15-A-vibrant-and-elegant-image-representing-Cosmetic-Dentistry-It-features-a.webp",
+    image: cosmeticDentistry,
     longDescription: "Our cosmetic dentistry services are designed to enhance the appearance of your smile. Whether you're looking for a brighter smile through professional teeth whitening, or a complete transformation with veneers, our expert team can help. We use the latest techniques and materials to ensure natural-looking results that boost your confidence. From minor touch-ups to complete smile makeovers, we're here to help you achieve the smile of your dreams."
   },
   {
     title: "Dental Implants",
     description: "Restore your smile with state-of-the-art dental implants that look and feel like natural teeth.",
     features: ["Titanium Implants", "Crown Fitting", "Bone Grafting", "Full Mouth Restoration"],
-    image: "https://i.ibb.co/47cCRr0/DALL-E-2024-12-25-08-08-22-An-educational-and-professional-illustration-for-Dental-Implants-The-imag.webp",
+    image: dentalImplants,
     longDescription: "Dental implants offer a permanent solution for missing teeth. Our implant procedures use cutting-edge technology to place titanium posts that act as artificial tooth roots. These are then fitted with custom-made crowns that match your natural teeth. For patients needing multiple teeth replaced, we offer full mouth restoration options. Our experienced team ensures a comfortable experience and stunning results, giving you back your full, confident smile."
   },
   {
     title: "Orthodontics",
     description: "Achieve the perfect smile with our comprehensive orthodontic treatments and solutions.",
     features: ["Invisible Braces", "Traditional Braces", "Clear Aligners", "Retainers"],
-    image: "https://i.ibb.co/Tb6WZyP/DALL-E-2024-12-25-08-16-55-A-realistic-illustration-of-an-Indian-child-around-12-years-old-smiling-w.webp",
+    image: orthodontics,
     longDescription: "Our orthodontic treatments cater to patients of all ages, helping to straighten teeth and correct bite issues. We offer a range of options including traditional braces, clear aligners, and invisible braces to suit different preferences and needs. Our team of orthodontists uses advanced 3D imaging to plan your treatment, ensuring precise and efficient results. We're committed to creating beautiful, aligned smiles that not only look great but also contribute to better oral health."
   },
   {
     title: "Pediatric Dentistry",
     description: "Specialized dental care for children in a friendly and comfortable environment.",
     features: ["Child-Friendly Atmosphere", "Preventive Care", "Early Orthodontic Treatment", "Dental Education for Kids"],
-    image: "https://i.ibb.co/X34TwMd/DALL-E-2024-12-25-08-27-22-A-visually-appealing-and-professional-pediatric-dentistry-themed-image-re.webp",
+    image: pediatricDentistry,
     longDescription: "Our pediatric dentistry services are tailored to make dental visits enjoyable for children. We've created a warm, welcoming environment that puts young patients at ease. Our pediatric specialists are trained to handle the unique dental needs of children, from infants to teenagers. We focus on preventive care, early detection of orthodontic issues, and educating both children and parents about good oral hygiene habits. Our goal is to establish a positive association with dental care that lasts a lifetime."
   },
   {
     title: "Oral Surgery",
     description: "Expert oral surgical procedures to address complex dental issues and improve oral health.",
     features: ["Wisdom Teeth Removal", "Dental Extractions", "Jaw Surgery", "Bone Grafting"],
-    image: "https://i.ibb.co/QH4Ym14/DALL-E-2024-12-25-08-30-36-A-professional-and-modern-oral-surgery-scene-in-a-state-of-the-art-clinic.webp",
+    image: oralSurgery,
     longDescription: "Our oral surgery services cover a wide range of procedures to treat more complex dental issues. From wisdom teeth removal to corrective jaw surgery, our skilled oral surgeons use the latest techniques to ensure safe, effective treatments. We also offer bone grafting for patients preparing for dental implants. Our team is committed to patient comfort, using advanced anesthesia options and providing comprehensive pre- and post-operative care to ensure a smooth recovery process."
   },
 ]
@@ -98,7 +106,7 @@ export default function ServicesPage() {
   return (
     <Layout>
       <div className="bg-gradient-to-b from-blue-50/50 to-white py-20 dark:from-blue-950/10 dark:to-background">
-        <div className="container">
+        <div className="lg:px-16 px-4">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <motion.span
               initial={{ opacity: 0, y: 20 }}

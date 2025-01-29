@@ -6,6 +6,7 @@ import { Shield, Activity, ArrowRight, Sparkles, Calendar } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import { DentalBackground } from "./dental-background"
+import tooth from "@/public/tooth.png"
 
 export function HeroSection() {
   const containerVariants = {
@@ -127,7 +128,7 @@ export function HeroSection() {
           <div className="relative aspect-square w-full max-w-[600px]">
             <div className="absolute -inset-4 rounded-full border-2 border-blue-500/20 dark:border-blue-400/10" />
             <Image
-              src="https://i.ibb.co/RSdnvCK/tooth-image-Photoroom.png"
+              src={tooth}
               alt="3D Tooth Illustration"
               fill
               className="object-contain transition-transform duration-500 hover:scale-105"

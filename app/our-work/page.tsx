@@ -8,21 +8,25 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Layout } from "@/components/layout"
 import Link from "next/link"
+import patient1Before from "@/public/patient1-before.jpeg";
+import patient1After from "@/public/patient1-after.jpeg";
+import patient2Before from "@/public/patient2-before.jpeg";
+import patient2After from "@/public/patient2-after.jpeg";
 
 const caseStudies = [
   {
     title: "Complete Smile Makeover",
     description: "A comprehensive transformation including veneers, whitening, and gum contouring.",
-    before: "https://i.ibb.co/mbr5FSK/Whats-App-Image-2024-12-23-at-20-12-45.jpg",
-    after: "https://i.ibb.co/KztB917/Whats-App-Image-2024-12-23-at-20-12-45-1.jpg",
+    before: patient1Before,
+    after: patient1After,
     category: "Cosmetic Dentistry",
     location: "Balajipuram Clinic"
   },
   {
     title: "Dental Implant Restoration",
     description: "Replacing missing teeth with natural-looking, functional implants.",
-    before: "https://i.ibb.co/x1DTYfX/Whats-App-Image-2024-12-23-at-20-12-47.jpg",
-    after: "https://i.ibb.co/kc30Zkk/Whats-App-Image-2024-12-24-at-07-47-27.jpg",
+    before: patient2Before,
+    after: patient2After,
     category: "Implant Dentistry",
     location: "Township Clinic"
   },

@@ -5,6 +5,9 @@ import { motion } from "framer-motion"
 import { Wallet, Clock, Users, Laptop2, UserCheck, Heart, ArrowRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
+import aboutImage1 from "@/public/about-image1.jpeg"
+import aboutImage2 from "@/public/about-image2.jpeg"
+import aboutImage3 from "@/public/about-image3.jpeg"
 
 const features = [
   {
@@ -159,7 +162,7 @@ export function AboutSection() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent" />
                 <Image
-                  src="https://i.ibb.co/cyVyPvg/Whats-App-Image-2024-12-12-at-18-33-56.jpg?height=800&width=1000"
+                  src={aboutImage1}
                   alt="Modern Dental Clinic"
                   fill
                   className="object-cover object-[25%_center]"
@@ -171,7 +174,7 @@ export function AboutSection() {
                 <div className="relative aspect-square overflow-hidden rounded-2xl">
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent" />
                   <Image
-                    src="https://i.ibb.co/vkkzQt1/Whats-App-Image-2024-12-12-at-18-33-59.jpg?height=400&width=400"
+                    src={aboutImage2}
                     alt="Dental Equipment"
                     fill
                     className="object-cover"
@@ -180,7 +183,7 @@ export function AboutSection() {
                 <div className="relative aspect-square overflow-hidden rounded-2xl">
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent" />
                   <Image
-                    src="https://i.ibb.co/dLrHLSh/Whats-App-Image-2024-12-12-at-18-33-58.jpg?height=400&width=400"
+                    src={aboutImage3}
                     alt="Patient Care"
                     fill
                     className="object-cover"

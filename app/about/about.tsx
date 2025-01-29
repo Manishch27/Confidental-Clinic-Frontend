@@ -7,6 +7,10 @@ import { motion } from "framer-motion"
 import { Wallet, Clock, Users, Laptop2, UserCheck, Heart, ArrowRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Layout } from "@/components/layout"
+import aboutClinic from "@/public/about-clinic.jpeg"
+import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
+import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
+import drAnuradha from "@/public/dr-anuradha-solanki.jpeg"
 
 const features = [
     {
@@ -52,19 +56,19 @@ const features = [
     {
       name: "Dr. Pankaj Chaudhary",
       role: "Lead Dentist",
-      image: "https://i.ibb.co/vVcV3zN/Whats-App-Image-2024-12-12-at-18-32-39.jpg?height=400&width=300",
+      image: drPankaj,
       description: "Expert in dental surgery and implants, delivering precise care with over 10 years of experience.",
     },
     {
       name: "Dr. Sunil Fauzdar",
       role: "Oral & maxillofacial surgeon",
-      image: "https://i.ibb.co/pw0rLYZ/Whats-App-Image-2024-12-23-at-20-04-46.jpg?height=400&width=300",
+      image: drSunil,
       description: "Specializes in oral and facial surgery, ensuring positive and gentle patient experiences.",
     },
     {
       name: "Dr. Anuradha Solanki",
       role: "Dental Surgeon",
-      image: "https://i.ibb.co/J7b7gKj/Whats-App-Image-2024-12-23-at-20-06-22.jpg?height=400&width=300",
+      image: drAnuradha,
       description: "Dr. Anuradha Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     },
     {
@@ -125,7 +129,7 @@ const features = [
     return(
       <Layout>
       <div className="bg-gradient-to-b from-blue-50/50 to-white py-20 dark:from-blue-950/10 dark:to-background">
-        <div className="container">
+        <div className="lg:px-16 px-4">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -220,7 +224,7 @@ const features = [
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent" />
                 <Image
-                  src="https://i.ibb.co/qxvpT4Z/Whats-App-Image-2024-12-12-at-10-44-39.jpg?height=800&width=1000"
+                  src={aboutClinic}
                   alt="Confidental Clinic"
                   fill
                   className="object-cover object-[25%_center]"
