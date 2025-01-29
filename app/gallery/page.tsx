@@ -210,10 +210,10 @@ export default function GalleryPage() {
             transition={{ duration: 0.5 }}
           >
             <AnimatePresence>
-              {filteredImages.map(image => (
+              {filteredImages.map((image, index) => (
                 <motion.div
-                  key={image.src}
-                  layoutId={image.src}
+                  key={index}
+                  layoutId={index.toString()}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}

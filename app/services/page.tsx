@@ -160,7 +160,6 @@ export default function ServicesPage() {
             <DialogContent className="sm:max-w-[600px]">
               <DialogHeader>
                 <DialogTitle className="flex items-center gap-2 text-2xl">
-                  {selectedService?.icon}
                   {selectedService?.title}
                 </DialogTitle>
               </DialogHeader>
