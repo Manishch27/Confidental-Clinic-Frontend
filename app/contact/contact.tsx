@@ -159,7 +159,7 @@ export function Contact(){
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-6 text-lg text-muted-foreground"
             >
-              We're here to answer any questions you may have about our services or to schedule your appointment.
+              We&apos;re here to answer any questions you may have about our services or to schedule your appointment.
             </motion.p>
           </div>
 

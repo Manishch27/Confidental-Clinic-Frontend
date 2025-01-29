@@ -136,7 +136,7 @@ export default function OurWorkPage() {
               Transforming Smiles, <span className="text-blue-600">Changing Lives</span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Explore our portfolio of dental transformations and see the remarkable results we've achieved for our patients.
+              Explore our portfolio of dental transformations and see the remarkable results we&apos;ve achieved for our patients.
             </p>
           </motion.div>
 
@@ -201,7 +201,7 @@ export default function OurWorkPage() {
             transition={{ duration: 0.5 }}
           >
             <AnimatePresence>
-              {filteredStudies.map((study, index) => (
+              {filteredStudies.map(study => (
                 <motion.div
                   key={study.title}
                   layoutId={study.title}

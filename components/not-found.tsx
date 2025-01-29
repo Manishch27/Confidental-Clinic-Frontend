@@ -53,7 +53,7 @@ export default function NotFound() {
           >
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">Oops! Page Not Found</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-              We couldn't find the page you're looking for. It might have been removed, renamed, or doesn't exist.
+              We couldn&apos;t find the page you&apos;re looking for. It might have been removed, renamed, or doesn&apos;t exist.
             </p>
             <div className="flex justify-center space-x-4 mt-8">
               <Button asChild>

@@ -6,7 +6,7 @@ import { motion} from "framer-motion"
 import { ArrowRight, Plus } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Layout } from "@/components/layout"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle} from "@/components/ui/dialog"
 import generalDentistry from "@/public/general-dentistry.webp"
 import cosmeticDentistry from "@/public/cosmetic-dentistry.webp"
@@ -62,7 +62,7 @@ const services = [
   },
 ]
 
-function ServiceCard({ service, index, onClick }: { service: typeof services[0]; index: number; onClick: () => void }) {
+function ServiceCard({ service, index}: { service: typeof services[0]; index: number; onClick: () => void }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

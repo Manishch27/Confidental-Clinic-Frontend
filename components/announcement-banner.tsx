@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X } from 'lucide-react'
 
 const announcements = [
   "🦷 New Patients: Free Consultation & x-ray",
@@ -12,7 +11,7 @@ const announcements = [
 
 export function AnnouncementBanner() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible] = useState(true)
 
   useEffect(() => {
     const interval = setInterval(() => {

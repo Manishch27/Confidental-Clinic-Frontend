@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowRight, Stethoscope, SmileIcon as Tooth, Syringe, Smile, ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"

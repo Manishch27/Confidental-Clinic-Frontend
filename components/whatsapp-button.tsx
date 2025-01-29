@@ -7,7 +7,6 @@ export function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false)
   const [showText, setShowText] = useState(false)
   const [isFooterVisible, setIsFooterVisible] = useState(false)
-  const footerRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -68,7 +67,7 @@ export function WhatsAppButton() {
       {showText && (
         <div className="mr-4 mb-2 animate-fade-in-up">
           <div className="relative rounded-lg bg-white p-4 text-sm font-medium text-gray-800 shadow-lg dark:bg-gray-800 dark:text-white">
-            Hey, I'm here!
+            Hey, I&apos;m here!
             <div className="absolute -bottom-2 right-2 h-4 w-4 rotate-45 bg-white dark:bg-gray-800"></div>
           </div>
         </div>
