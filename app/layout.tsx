@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ErrorBoundary errorComponent={() => <div>Something went wrong.</div>}>
             {children}
-          </ErrorBoundary>
           <Toaster position="bottom-right" />
         </ThemeProvider>
       </body>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { ArrowLeftRight } from 'lucide-react';
 import patient1Before from "@/public/patient1-before.jpeg";
