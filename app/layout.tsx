@@ -2,7 +2,6 @@ import '@/app/globals.css'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from 'react-hot-toast'
-import { ErrorBoundary } from 'next/dist/client/components/error-boundary'
 
 const inter = Inter({ subsets: ['latin'] })
 
