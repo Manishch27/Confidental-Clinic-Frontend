@@ -37,8 +37,8 @@ const clinics = {
         {
           icon: <Clock className="h-6 w-6" />,
           label: "Working Hours",
-          value: "Mon - Sat, 9:00 - 20:00",
-          description: "Sunday appointments available on request"
+          value: "Mon - Sat, 10:00 - 2PM, 4:00 - 8PM",
+          description: "Sunday appointments are only available from 10:00 AM to 2:00 PM"
         },
       ],
       mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453782.24541579146!2d77.48315364877307!3d27.30774900583918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f49ad86d7fd%3A0xa49e84a10e25ba20!2sShri%20Radha%20Town!5e0!3m2!1sen!2sin!4v1735219883035!5m2!1sen!2sin"
@@ -67,8 +67,8 @@ const clinics = {
         {
           icon: <Clock className="h-6 w-6" />,
           label: "Working Hours",
-          value: "Mon - Sat, 10:00 - 19:00",
-          description: "Closed on Sundays"
+          value: "Mon - Sat, 10:00 - 2PM, 4:00 - 8PM",
+          description: "Sunday appointments are only available from 10:00 AM to 2:00 PM"
         },
       ],
       mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453782.24541579146!2d77.48315364877307!3d27.30774900583918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f49ad86d7fd%3A0xa49e84a10e25ba20!2sShri%20Radha%20Town!5e0!3m2!1sen!2sin!4v1735220213516!5m2!1sen!2sin"

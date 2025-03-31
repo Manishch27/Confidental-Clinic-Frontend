@@ -27,12 +27,12 @@ const contactInfo = [
   {
     icon: <Phone className="h-5 w-5" />,
     label: "24/7 Emergency",
-    value: "+91 05652444007",
+    value: "+91 0565355388",
   },
   {
     icon: <Mail className="h-5 w-5" />,
     label: "Email Us",
-    value: "contact@confidental.com",
+    value: "contact@myconfidental.in",
   },
   {
     icon: <MapPin className="h-5 w-5" />,
@@ -42,7 +42,19 @@ const contactInfo = [
   {
     icon: <Clock className="h-5 w-5" />,
     label: "Working Hours",
-    value: "Mon - Sat, 9:00 - 19:00",
+    value: "Mon - Sat, 10:00 AM - 2:00 PM",
+  },
+
+  {
+    icon: <Clock className="h-5 w-5" />,
+    label: "Working Hours",
+    value: "Mon - Sat, 10:00 - 2PM, 4:00 - 8PM",
+  },
+
+  {
+    icon: <Clock className="h-5 w-5" />,
+    label: "Working Hours",
+    value: "Sun, 10:00 AM - 2:00 PM",
   },
 ]
 
@@ -143,20 +155,20 @@ export function Footer() {
                 {contactInfo.map((info, index) => (
                   <li key={index} className="group flex items-start gap-3">
                     <div className="rounded-full bg-blue-500/10 p-2 text-blue-600 transition-colors group-hover:bg-blue-500 group-hover:text-white dark:bg-blue-400/10 dark:text-blue-400 dark:group-hover:bg-blue-400 dark:group-hover:text-white">
-                      {info.icon}
+                      {info?.icon}
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="text-sm text-muted-foreground">{info?.label}</p>
                       {index === 0 ? (
                         <a href={`tel:${info.value.replace(/\s/g, '')}`} className="font-medium hover:text-blue-600">
-                          {info.value}
+                          {info?.value}
                         </a>
                       ) : index === 1 ? (
-                        <a href={`mailto:${info.value}`} className="font-medium hover:text-blue-600">
+                        <a href={`mailto:${info?.value}`} className="font-medium hover:text-blue-600">
                           {info.value}
                         </a>
                       ) : (
-                        <p className="font-medium">{info.value}</p>
+                        <p className="font-medium">{info?.value}</p>
                       )}
                     </div>
                   </li>

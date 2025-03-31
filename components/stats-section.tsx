@@ -85,7 +85,7 @@ export function StatsSection() {
     },
     {
       icon: <Star className="h-8 w-8" />,
-      label: "Fillings",
+      label: "Orthodontic Cases",
       value: 5000,
     },
   ]

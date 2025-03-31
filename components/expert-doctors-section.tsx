@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 import {Award, Clock } from 'lucide-react'
 import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
-import drAnuradha from "@/public/dr-anuradha-solanki.jpeg"
+import drKajal from "@/public/dr-kajal.jpeg"
+import drVipin from "@/public/dr-vipin-sharma.jpeg"
 
 
 const doctors = [
@@ -26,17 +27,17 @@ const doctors = [
     experience: 12,
   },
   {
-    name: "Dr. Anuradha Solanki",
+    name: "Dr. Kajal",
     edu: "B.D.S, M.D.S",
-    image: drAnuradha,
-    description: "Dr. Anuradha Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
+    image: drKajal,
+    description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     specialties: ["Dental Surgeon", "Dental Implants"],
     experience: 8,
   },
   {
     name: "Dr. Vipin Sharma",
     edu: "B.D.S, M.D.S",
-    image: "/placeholder.svg?height=400&width=300",
+    image: drVipin,
     description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
     specialties: ["Orthodontics", "Dentofacial Orthodontics"],
     experience: 15,
@@ -58,7 +59,7 @@ function DoctorCard({ doctor, index }: { doctor: typeof doctors[0]; index: numbe
             src={doctor.image}
             alt={doctor.name}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-110"
+            className="object-cover object-top transition-transform duration-300 group-hover:scale-110"
           />
         </div>
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{doctor.name}</h3>

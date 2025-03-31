@@ -125,7 +125,7 @@ export function Navbar() {
                 </div>
                 <div className="text-sm">
                   <p className="font-medium">Monday - Friday</p>
-                  <p className="text-xs text-muted-foreground">9:00 - 8PM</p>
+                  <p className="text-xs text-muted-foreground">10:00 - 2PM, 4:00 - 8PM</p>
                 </div>
               </div>
             </div>
@@ -231,7 +231,8 @@ export function Navbar() {
                               <Clock className="h-5 w-5" />
                             </div>
                             <div>
-                              <p className="font-medium text-blue-600 dark:text-blue-300">Mon - Fri: 9:00 - 8:00</p>
+                              <p className="font-medium text-blue-600 dark:text-blue-300">Mon - Fri: 10:00 - 2PM, <br/> 4:00 - 8PM</p>
+                              <p className="font-medium text-blue-600 dark:text-blue-300">Sun: 10:00 - 2PM</p>
                               <p className="text-sm text-blue-500 dark:text-blue-400">Working Hours</p>
                             </div>
                           </div>
