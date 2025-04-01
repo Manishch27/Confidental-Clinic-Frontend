@@ -39,12 +39,7 @@ const contactInfo = [
     label: "Visit Us",
     value: "123 Dental Street, Mathura, UP 281001",
   },
-  {
-    icon: <Clock className="h-5 w-5" />,
-    label: "Working Hours",
-    value: "Mon - Sat, 10:00 AM - 2:00 PM",
-  },
-
+  
   {
     icon: <Clock className="h-5 w-5" />,
     label: "Working Hours",
@@ -72,7 +67,7 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
       <div className="absolute inset-0 bg-grid-blue-500/10 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,black,rgba(0,0,0,0.6))]" />
       <div className="lg:px-16 px-4 relative z-10 py-12 md:py-16">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* About Section */}
           <div className="space-y-6">
             <Link href="/" className="relative block">
@@ -123,24 +118,6 @@ export function Footer() {
                   >
                     <ArrowRight className="mr-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="mb-6 text-lg font-semibold text-foreground">Our Services</h3>
-            <ul className="space-y-4">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <Link
-                    href={service.href}
-                    className="group flex items-center text-muted-foreground transition-colors hover:text-blue-600"
-                  >
-                    <ArrowRight className="mr-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    {service.name}
                   </Link>
                 </li>
               ))}

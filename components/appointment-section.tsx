@@ -94,7 +94,7 @@ export function AppointmentSection() {
     const encodedMessage = encodeURIComponent(message)
 
     // WhatsApp phone number - replace with your actual number
-    const phoneNumber = "919876543210" // Add your WhatsApp number here (with country code, no + or spaces)
+    const phoneNumber = "917500286600" // Add your WhatsApp number here (with country code, no + or spaces)
 
     // Create WhatsApp URL
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`

@@ -49,7 +49,7 @@ const clinics = {
         {
           icon: <Phone className="h-6 w-6" />,
           label: "Phone",
-          value: "+91 9876543211",
+          value: "+91 05652444007",
           description: "Mon-Sat from 10am to 7pm"
         },
         {

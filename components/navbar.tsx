@@ -29,7 +29,7 @@ const navItems = [
 
 const quickActions = [
   { name: "Book Appointment", href: "/#appointment", icon: <Calendar className="h-5 w-5" /> },
-  { name: "Emergency Care", href: "tel:+919876543210", icon: <Phone className="h-5 w-5" /> },
+  { name: "Emergency Care", href: "tel:+9105652444007", icon: <Phone className="h-5 w-5" /> },
 ]
 
 export function Navbar() {
@@ -115,7 +115,7 @@ export function Navbar() {
                   <Phone className="h-4 w-4" />
                 </div>
                 <div className="text-sm">
-                  <p className="font-medium">+91 05652444007</p>
+                  <a href="tel:9105652444007"><p className="font-medium">+91 05652444007</p></a>
                   <p className="text-xs text-muted-foreground">24/7 Emergency</p>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export function Navbar() {
                               <Mail className="h-5 w-5" />
                             </div>
                             <div>
-                              <p className="font-medium text-blue-600 dark:text-blue-300">contact@confidental.com</p>
+                              <p className="font-medium text-blue-600 dark:text-blue-300">contact@myconfidental.in</p>
                               <p className="text-sm text-blue-500 dark:text-blue-400">Email Support</p>
                             </div>
                           </div>
@@ -222,10 +222,21 @@ export function Navbar() {
                               <MapPin className="h-5 w-5" />
                             </div>
                             <div>
-                              <p className="font-medium text-blue-600 dark:text-blue-300">123 Dental Street</p>
-                              <p className="text-sm text-blue-500 dark:text-blue-400">Mathura, UP 281001</p>
+                              <p className="font-medium text-blue-600 dark:text-blue-300">447A, B.R. TOWN, Township</p>
+                              <p className="text-sm text-blue-500 dark:text-blue-400">Mathura, UP 281006</p>
                             </div>
                           </div>
+
+                          <div className="flex items-center gap-3">
+                            <div className="rounded-lg bg-blue-500 p-2 text-white">
+                              <MapPin className="h-5 w-5" />
+                            </div>
+                            <div>
+                              <p className="font-medium text-blue-600 dark:text-blue-300">123 Baljipuram Main Road</p>
+                              <p className="text-sm text-blue-500 dark:text-blue-400">Mathura, UP 281001,</p>
+                            </div>
+                          </div>
+
                           <div className="flex items-center gap-3">
                             <div className="rounded-lg bg-blue-500 p-2 text-white">
                               <Clock className="h-5 w-5" />
