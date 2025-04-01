@@ -8,6 +8,8 @@ import patient1Before from "@/public/patient1-before.jpeg";
 import patient1After from "@/public/patient1-after.jpeg";
 import patient2Before from "@/public/patient2-before.jpeg";
 import patient2After from "@/public/patient2-after.jpeg";
+import patient3Before from "@/public/patient3-before.jpeg";
+import patient3After from "@/public/patient3-after.jpeg";
 
 interface BeforeAfterSliderProps {
   beforeImage: string | StaticImageData;
@@ -115,10 +117,10 @@ export function BeforeAfterSection() {
       afterImage: patient2After,
     },
     {
-      title: "Orthodontic Treatment",
-      description: "Straightening teeth for a perfect smile",
-      beforeImage: "/placeholder.svg?height=400&width=600&text=Before+Orthodontic+Treatment",
-      afterImage: "/placeholder.svg?height=400&width=600&text=After+Orthodontic+Treatment",
+      title: "Dental Implants",
+      description: "Crown Fitting for a perfect smile",
+      beforeImage: patient3Before,
+      afterImage: patient3After,
     },
   ];
 

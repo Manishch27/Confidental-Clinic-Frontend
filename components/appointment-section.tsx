@@ -2,49 +2,54 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Calendar, Clock, Phone, Mail, User2, Building2, CalendarCheck, Stethoscope, PillIcon as Pills, VideoIcon, Activity } from 'lucide-react'
+import {
+  Calendar,
+  Clock,
+  Phone,
+  Mail,
+  User2,
+  Building2,
+  CalendarCheck,
+  Stethoscope,
+  PillIcon as Pills,
+  VideoIcon,
+  Activity,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useForm } from "react-hook-form"
-import toast from 'react-hot-toast'
+import toast from "react-hot-toast"
 
 const features = [
   {
     icon: <Stethoscope className="h-6 w-6" />,
     title: "Expert Medical Consultation",
-    description: "Get guidance from our experienced dental professionals"
+    description: "Get guidance from our experienced dental professionals",
   },
   {
     icon: <Pills className="h-6 w-6" />,
     title: "Treatment Discounts",
-    description: "Up to 30% off on dental procedures"
+    description: "Up to 30% off on dental procedures",
   },
   {
     icon: <VideoIcon className="h-6 w-6" />,
     title: "Virtual Consultations",
-    description: "Available for follow-ups and minor concerns"
+    description: "Available for follow-ups and minor concerns",
   },
   {
     icon: <Activity className="h-6 w-6" />,
     title: "Complete Dental Care",
-    description: "Comprehensive treatment plans tailored for you"
-  }
+    description: "Comprehensive treatment plans tailored for you",
+  },
+  {
+    icon: <Clock className="h-6 w-6" />,
+    title: "Flexible Hours",
+    description: "Mon-Sat: 10AM-2PM, 4PM-8PM, Sun: 10AM-2PM",
+  },
 ]
 
 type FormData = {
@@ -59,23 +64,57 @@ type FormData = {
 }
 
 export function AppointmentSection() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>()
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [visited, setVisited] = useState("no")
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    console.log(data)
+
+    // Format the message for WhatsApp
+    const message = `
+*New Appointment Request*
+----------------------------
+*Name:* ${data.name}
+*Phone:* ${data.phone}
+*Email:* ${data.email}
+*Location:* ${data.location === "downtown" ? "Balajipuram Clinic" : "Township Clinic"}
+*Doctor:* ${data.doctor}
+*Date:* ${data.date}
+*Time:* ${data.time}
+*First Visit:* ${data.visited === "yes" ? "No" : "Yes"}
+----------------------------
+`
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message)
+
+    // WhatsApp phone number - replace with your actual number
+    const phoneNumber = "919876543210" // Add your WhatsApp number here (with country code, no + or spaces)
+
+    // Create WhatsApp URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+
+    // Simulate API call delay
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+
     setIsSubmitting(false)
-    toast.success("Appointment request submitted successfully!")
-    // Redirect to contact page
-    window.location.href = '/contact'
+    toast.success("Redirecting to WhatsApp...")
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, "_blank")
   }
 
   return (
-    <section id="appointment" className="relative overflow-hidden bg-gradient-to-b from-blue-50/50 to-white py-20 dark:from-blue-950/10 dark:to-background">
-      <div className="lg:px-16 px-4 relative">
+    <section
+      id="appointment"
+      className="relative overflow-hidden bg-gradient-to-b from-blue-50/50 to-white py-20 dark:from-blue-950/10 dark:to-background"
+    >
+      <div className="container relative">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -154,12 +193,12 @@ export function AppointmentSection() {
             <Card className="relative overflow-hidden">
               <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-blue-500/10" />
               <div className="absolute -bottom-16 -left-16 h-32 w-32 rounded-full bg-blue-500/10" />
-              
+
               <CardHeader>
                 <CardTitle className="text-2xl">Request an Appointment</CardTitle>
                 <CardDescription>Fill in your details and preferred time</CardDescription>
               </CardHeader>
-              
+
               <CardContent className="relative z-10 space-y-6">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid gap-4 md:grid-cols-2">
@@ -177,7 +216,7 @@ export function AppointmentSection() {
                       </Select>
                       {errors.location && <p className="text-sm text-red-500">{errors.location.message}</p>}
                     </div>
-                    
+
                     <div className="space-y-2">
                       <Label htmlFor="doctor">Select Doctor</Label>
                       <Select onValueChange={(value) => register("doctor").onChange({ target: { value } })}>
@@ -210,7 +249,7 @@ export function AppointmentSection() {
                       </div>
                       {errors.date && <p className="text-sm text-red-500">{errors.date.message}</p>}
                     </div>
-                    
+
                     <div className="space-y-2">
                       <Label htmlFor="time">Preferred Time</Label>
                       <div className="relative">
@@ -249,11 +288,7 @@ export function AppointmentSection() {
                     <Label htmlFor="name">Full Name</Label>
                     <div className="relative">
                       <User2 className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="name"
-                        className="pl-10"
-                        {...register("name", { required: "Name is required" })}
-                      />
+                      <Input id="name" className="pl-10" {...register("name", { required: "Name is required" })} />
                     </div>
                     {errors.name && <p className="text-sm text-red-500">{errors.name.message}</p>}
                   </div>
@@ -272,7 +307,7 @@ export function AppointmentSection() {
                       </div>
                       {errors.phone && <p className="text-sm text-red-500">{errors.phone.message}</p>}
                     </div>
-                    
+
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
                       <div className="relative">
@@ -288,7 +323,11 @@ export function AppointmentSection() {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-blue-400" disabled={isSubmitting}>
+                  <Button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-blue-600 to-blue-400"
+                    disabled={isSubmitting}
+                  >
                     {isSubmitting ? "Submitting..." : "Book Appointment"}
                     <CalendarCheck className="ml-2 h-4 w-4" />
                   </Button>
@@ -301,4 +340,3 @@ export function AppointmentSection() {
     </section>
   )
 }
-
