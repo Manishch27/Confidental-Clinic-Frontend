@@ -167,7 +167,7 @@ export function Footer() {
             <div className="flex items-center gap-2 text-sm text-white">
               <span>Website by</span>
               <a 
-                href="https://techstrack.com" 
+                href="https://www.instagram.com/tech_strack/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative font-semibold text-white transition-all duration-300 hover:text-blue-200"
