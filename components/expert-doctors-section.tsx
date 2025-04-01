@@ -7,6 +7,7 @@ import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
 import drKajal from "@/public/dr-kajal.jpeg"
 import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
+import drVipin from "@/public/dr-vipin-sharma.jpeg"
 
 
 const doctors = [
@@ -18,6 +19,16 @@ const doctors = [
     specialties: ["Dental Surgeon", "Dental Implants"],
     experience: 10,
   },
+
+  {
+    name: "Dr. Vipin Sharma",
+    edu: "B.D.S, M.D.S",
+    image: drVipin,
+    description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
+    specialties: ["Orthodontics", "Dentofacial Orthodontics"],
+    experience: 15,
+  },
+
   {
     name: "Dr. Sunil Fauzdar",
     edu: "B.D.S, M.D.S",
@@ -26,23 +37,6 @@ const doctors = [
     specialties: ["Oral", "maxillofacial surgeon"],
     experience: 12,
   },
-  {
-    name: "Dr. Kajal",
-    edu: "B.D.S, M.D.S",
-    image: drKajal,
-    description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
-    specialties: ["Dental Surgeon", "Dental Implants"],
-    experience: 5,
-  },
-  // {
-  //   name: "Dr. Vipin Sharma",
-  //   edu: "B.D.S, M.D.S",
-  //   image: drSheetal,
-  //   description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
-  //   specialties: ["Orthodontics", "Dentofacial Orthodontics"],
-  //   experience: 15,
-  // },
-
   {
     name: "Dr. Sheetal Sharma",
     edu: "B.D.S, M.I.D.A",

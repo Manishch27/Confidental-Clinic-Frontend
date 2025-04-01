@@ -12,6 +12,7 @@ import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
 import drKajal from "@/public/dr-kajal.jpeg"
 import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
+import drVipin from "@/public/dr-vipin-sharma.jpeg"
 
 const features = [
     {
@@ -61,6 +62,14 @@ const features = [
       description: "Expert in dental surgery and implants, delivering precise care with over 10 years of experience.",
     },
     {
+        name: "Dr. Vipin Sharma",
+        edu: "B.D.S, M.D.S",
+        image: drVipin,
+        description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
+        specialties: ["Orthodontics", "Dentofacial Orthodontics"],
+        experience: 15,
+      },
+    {
       name: "Dr. Sunil Fauzdar",
       role: "Oral & maxillofacial surgeon",
       image: drSunil,
@@ -77,16 +86,7 @@ const features = [
       role: "Clinical Cosmetologist",
       image: drSheetal,
       description: "Specializing in clinical cosmetology and dental surgery, Dr. Sheetal is committed to enhancing smiles and confidence.",
-    },
-
-    // {
-    //   name: "Dr. Vipin Sharma",
-    //   role: "Dentofacial Orthodontics",
-    //   image: "/placeholder.svg?height=400&width=300",
-    //   description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
-    // },
-
-    
+    }
 
   ]
 
