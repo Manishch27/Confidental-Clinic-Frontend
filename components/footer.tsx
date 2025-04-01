@@ -17,6 +17,11 @@ const quickLinks = [
 const contactInfo = [
   {
     icon: <Phone className="h-5 w-5" />,
+    label: "For Inquiry",
+    value: "+91 05653553881"
+  },
+  {
+    icon: <Phone className="h-5 w-5" />,
     label: "24/7 Emergency",
     value: "+91 05653553881"
   },
@@ -127,7 +132,7 @@ export function Footer() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">{info?.label}</p>
-                      {index === 0 ? (
+                      {(index === 0 || index === 1) ? (
                         <a href={`tel:${info.value.replace(/\s/g, '')}`} className="font-medium hover:text-blue-600">
                           {info?.value}
                         </a>

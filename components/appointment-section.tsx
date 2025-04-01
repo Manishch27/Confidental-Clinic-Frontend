@@ -227,8 +227,8 @@ export function AppointmentSection() {
                           <SelectItem value="dr-pankaj">Dr. Pankaj Chaudhary</SelectItem>
                           <SelectItem value="dr-vipin">Dr. Vipin Sharma</SelectItem>
                           <SelectItem value="dr-sunil">Dr. Sunil Fauzdar</SelectItem>
-                          <SelectItem value="dr-anuradha">Dr. Kajal</SelectItem>
-                          <SelectItem value="dr-anuradha">Dr. Sheetal Sharma</SelectItem>
+                          <SelectItem value="dr-kajal">Dr. Kajal</SelectItem>
+                          <SelectItem value="dr-sheetal">Dr. Sheetal Sharma</SelectItem>
                         </SelectContent>
                       </Select>
                       {errors.doctor && <p className="text-sm text-red-500">{errors.doctor.message}</p>}
