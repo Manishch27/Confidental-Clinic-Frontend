@@ -12,17 +12,23 @@ import image1 from "@/public/about-image1.jpeg";
 import image2 from "@/public/about-image2.jpeg";
 import image3 from "@/public/about-image3.jpeg";
 import image4 from "@/public/about-clinic.jpeg";
+import image5 from "@/public/clinic-exterior.jpeg"
+import image6 from "@/public/treatment-room.jpeg"
+import image7 from "@/public/Township-reception.jpeg"
+import image8 from "@/public/chair.jpeg"
+import image9 from "@/public/consultation.jpeg"
+import image10 from "@/public/smile.jpeg"
 
 
 const galleryImages = [
   { 
-    src: image1, 
+    src: image7, 
     alt: "Balajipuram Clinic Reception", 
     location: "Balajipuram",
     category: "Interior"
   },
   { 
-    src: image2, 
+    src: image8, 
     alt: "Township Clinic Dental Chair", 
     location: "Township",
     category: "Equipment"
@@ -40,52 +46,40 @@ const galleryImages = [
     category: "Interior"
   },
   { 
-    src: "/placeholder.svg?height=600&width=800&text=Balajipuram+Sterilization+Room", 
-    alt: "Balajipuram Clinic Sterilization Room", 
+    src: image1, 
+    alt: "Patient image with team", 
     location: "Balajipuram",
-    category: "Equipment"
+    category: "Happy Patient"
   },
   { 
-    src: "/placeholder.svg?height=600&width=800&text=Township+Consultation+Room", 
-    alt: "Township Clinic Consultation Room", 
-    location: "Township",
-    category: "Interior"
-  },
-  { 
-    src: "/placeholder.svg?height=600&width=800&text=Balajipuram+Equipment", 
-    alt: "Balajipuram Clinic Advanced Dental Equipment", 
-    location: "Balajipuram",
-    category: "Equipment"
-  },
-  { 
-    src: "/placeholder.svg?height=600&width=800&text=Township+Exterior", 
+    src: image5, 
     alt: "Township Clinic Exterior", 
     location: "Township",
     category: "Exterior"
   },
   { 
-    src: "/placeholder.svg?height=600&width=800&text=Balajipuram+Treatment+Room", 
+    src: image6, 
     alt: "Balajipuram Treatment Room", 
     location: "Balajipuram",
     category: "Interior"
   },
   { 
-    src: "/placeholder.svg?height=600&width=800&text=Township+Smile+Makeover", 
+    src: image10, 
     alt: "Township Clinic Smile Makeover Result", 
     location: "Township",
     category: "Results"
   },
   { 
-    src: "/placeholder.svg?height=600&width=800&text=Balajipuram+Team", 
+    src: image2, 
     alt: "Balajipuram Clinic Team", 
     location: "Balajipuram",
     category: "Team"
   },
   { 
-    src: "/placeholder.svg?height=600&width=800&text=Township+Technology", 
-    alt: "Township Clinic Advanced Technology", 
+    src: image9, 
+    alt: "Township Clinic Consulation Area", 
     location: "Township",
-    category: "Equipment"
+    category: "Interior"
   },
 ]
 

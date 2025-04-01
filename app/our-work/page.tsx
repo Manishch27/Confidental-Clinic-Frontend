@@ -12,6 +12,8 @@ import patient1Before from "@/public/patient1-before.jpeg";
 import patient1After from "@/public/patient1-after.jpeg";
 import patient2Before from "@/public/patient2-before.jpeg";
 import patient2After from "@/public/patient2-after.jpeg";
+import patient3Before from "@/public/patient3-before.jpeg";
+import patient3After from "@/public/patient3-after.jpeg";
 
 const caseStudies = [
   {
@@ -31,53 +33,13 @@ const caseStudies = [
     location: "Township Clinic"
   },
   {
-    title: "Invisalign Treatment",
+    title: "Dental Implant",
     description: "An 18-month journey to perfectly aligned teeth using invisible aligners.",
-    before: "/placeholder.svg?height=600&width=800&text=Before+Invisalign",
-    after: "/placeholder.svg?height=600&width=800&text=After+Invisalign",
-    category: "Orthodontics",
-    location: "Balajipuram Clinic"
-  },
-  {
-    title: "Teeth Whitening",
-    description: "Professional in-office whitening for a brighter, more confident smile.",
-    before: "/placeholder.svg?height=600&width=800&text=Before+Whitening",
-    after: "/placeholder.svg?height=600&width=800&text=After+Whitening",
-    category: "Cosmetic Dentistry",
-    location: "Township Clinic"
-  },
-  {
-    title: "Full Mouth Reconstruction",
-    description: "Comprehensive treatment to restore function and aesthetics to severely damaged teeth.",
-    before: "/placeholder.svg?height=600&width=800&text=Before+Reconstruction",
-    after: "/placeholder.svg?height=600&width=800&text=After+Reconstruction",
+    before: patient3Before,
+    after: patient3After,
     category: "Restorative Dentistry",
-    location: "Balajipuram Clinic"
-  },
-  {
-    title: "Gum Contouring",
-    description: "Reshaping the gum line to create a more balanced and attractive smile.",
-    before: "/placeholder.svg?height=600&width=800&text=Before+Gum+Contouring",
-    after: "/placeholder.svg?height=600&width=800&text=After+Gum+Contouring",
-    category: "Periodontics",
     location: "Township Clinic"
   },
-  {
-    title: "Dental Crowns",
-    description: "Custom-made crowns to restore damaged teeth and enhance smile aesthetics.",
-    before: "/placeholder.svg?height=600&width=800&text=Before+Crowns",
-    after: "/placeholder.svg?height=600&width=800&text=After+Crowns",
-    category: "Restorative Dentistry",
-    location: "Balajipuram Clinic"
-  },
-  {
-    title: "Pediatric Dental Care",
-    description: "Gentle and effective dental treatments for our youngest patients.",
-    before: "/placeholder.svg?height=600&width=800&text=Before+Pediatric+Treatment",
-    after: "/placeholder.svg?height=600&width=800&text=After+Pediatric+Treatment",
-    category: "Pediatric Dentistry",
-    location: "Township Clinic"
-  }
 ]
 
 const categories = ["All", ...new Set(caseStudies.map(study => study.category))]
