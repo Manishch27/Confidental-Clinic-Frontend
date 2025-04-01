@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import { Star, Quote, ChevronLeft, ChevronRight, MessageCircle, User } from 'lucide-react'
 import { Button } from "@/components/ui/button"

@@ -70,7 +70,6 @@ export function AppointmentSection() {
     formState: { errors },
   } = useForm<FormData>()
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [visited, setVisited] = useState("no")
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)

@@ -14,15 +14,6 @@ const quickLinks = [
   { name: "Contact Us", href: "/contact" },
 ]
 
-const services = [
-  { name: "General Dentistry", href: "/services#general-dentistry" },
-  { name: "Cosmetic Dentistry", href: "/services#cosmetic-dentistry" },
-  { name: "Dental Implants", href: "/services#dental-implants" },
-  { name: "Orthodontics", href: "/services#orthodontics" },
-  { name: "Pediatric Dentistry", href: "/services#pediatric-dentistry" },
-  { name: "Emergency Care", href: "/contact" },
-]
-
 const contactInfo = [
   {
     icon: <Phone className="h-5 w-5" />,
