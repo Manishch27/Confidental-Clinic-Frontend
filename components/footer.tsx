@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: <Phone className="h-5 w-5" />,
     label: "24/7 Emergency",
-    value: "+91 0565355388",
+    value: "+91 05653553881"
   },
   {
     icon: <Mail className="h-5 w-5" />,
@@ -28,7 +28,7 @@ const contactInfo = [
   {
     icon: <MapPin className="h-5 w-5" />,
     label: "Visit Us",
-    value: "123 Dental Street, Mathura, UP 281001",
+    value: "123 Balajipuram Main Road, Mathura, UP 281001",
   },
   
   {
