@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import {Award, Clock } from 'lucide-react'
 import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
-import drKajal from "@/public/dr-kajal.jpeg"
 import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
 import drVipin from "@/public/dr-vipin-sharma.jpeg"
 
