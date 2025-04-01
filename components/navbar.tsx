@@ -260,10 +260,12 @@ export function Navbar() {
                         variant="outline"
                         className="w-full border-blue-500 text-blue-600 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-300 dark:hover:bg-blue-900"
                       >
-                        <Link href="tel:+9105652444007">
-                          <Phone className="mr-2 h-4 w-4" />
-                          Call Now
-                        </Link>
+                        <a href="tel:+9105652444007">
+                          <>
+                            <Phone className="mr-2 h-4 w-4" />
+                            Call Now
+                          </>
+                        </a>
                       </Button>
                       <Button
                         asChild
