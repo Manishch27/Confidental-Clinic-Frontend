@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { motion, useAnimation, useInView } from 'framer-motion'
-import { Star, Quote, ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react'
+import { Star, Quote, ChevronLeft, ChevronRight, MessageCircle, User } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 const testimonials = [
   {
     name: "Rohan Sharma",
-    image: "/placeholder.svg?height=200&width=200",
+    image: User,
     content: "Confidental transformed my smile and boosted my confidence. The team's expertise and care are unmatched!",
     rating: 5,
     location: "Balajipuram, Mathura",
@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     name: "Saurabh",
-    image: "/placeholder.svg?height=200&width=200",
+    image: User,
     content: "I've never felt more at ease at a dental clinic. The staff is friendly, and the results are amazing!",
     rating: 5,
     location: "Chandandanvan Phase-I, Mathura",
@@ -27,7 +27,7 @@ const testimonials = [
   },
   {
     name: "Vishal Chaudhary",
-    image: "/placeholder.svg?height=200&width=200",
+    image: User,
     content: "From routine cleanings to complex procedures, Confidental always delivers top-notch care. Highly recommended!",
     rating: 5,
     location: "Pushpanjali, Township, Mathura",
@@ -50,11 +50,8 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
           <div className="flex items-center gap-4">
             <div className="relative">
               <div className="relative h-16 w-16 overflow-hidden rounded-full ring-2 ring-blue-500/20 transition-all duration-300 group-hover:ring-blue-500/40">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                <testimonial.image
+                  className="h-16 w-16 text-blue-500 transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="absolute -bottom-1 -right-1 rounded-full bg-blue-500 p-1 text-white">
