@@ -10,7 +10,8 @@ import { Layout } from "@/components/layout"
 import aboutClinic from "@/public/about-clinic.jpeg"
 import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
-import drAnuradha from "@/public/dr-anuradha-solanki.jpeg"
+import drKajal from "@/public/dr-kajal.jpeg"
+import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
 
 const features = [
     {
@@ -66,17 +67,27 @@ const features = [
       description: "Specializes in oral and facial surgery, ensuring positive and gentle patient experiences.",
     },
     {
-      name: "Dr. Anuradha Solanki",
+      name: "Dr. Kajal",
       role: "Dental Surgeon",
-      image: drAnuradha,
-      description: "Dr. Anuradha Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
+      image: drKajal,
+      description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     },
     {
-      name: "Dr. Vipin Sharma",
-      role: "Dentofacial Orthodontics",
-      image: "/placeholder.svg?height=400&width=300",
-      description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
+      name: "Dr. Sheetal Sharma",
+      role: "Clinical Cosmetologist",
+      image: drSheetal,
+      description: "Specializing in clinical cosmetology and dental surgery, Dr. Sheetal is committed to enhancing smiles and confidence.",
     },
+
+    // {
+    //   name: "Dr. Vipin Sharma",
+    //   role: "Dentofacial Orthodontics",
+    //   image: "/placeholder.svg?height=400&width=300",
+    //   description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
+    // },
+
+    
+
   ]
 
   export function FeatureItem({ feature, index }: { feature: typeof features[0]; index: number }) {
@@ -113,7 +124,7 @@ const features = [
             alt={member.name}
             width={300}
             height={400}
-            className="mx-auto rounded-xl object-cover"
+            className="mx-auto rounded-xl object-cover object-top"
           />
           <div className="text-center">
             <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>

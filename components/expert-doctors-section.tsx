@@ -6,7 +6,7 @@ import {Award, Clock } from 'lucide-react'
 import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
 import drKajal from "@/public/dr-kajal.jpeg"
-import drVipin from "@/public/dr-vipin-sharma.jpeg"
+import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
 
 
 const doctors = [
@@ -32,15 +32,24 @@ const doctors = [
     image: drKajal,
     description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     specialties: ["Dental Surgeon", "Dental Implants"],
-    experience: 8,
+    experience: 5,
   },
+  // {
+  //   name: "Dr. Vipin Sharma",
+  //   edu: "B.D.S, M.D.S",
+  //   image: drSheetal,
+  //   description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
+  //   specialties: ["Orthodontics", "Dentofacial Orthodontics"],
+  //   experience: 15,
+  // },
+
   {
-    name: "Dr. Vipin Sharma",
-    edu: "B.D.S, M.D.S",
-    image: drVipin,
-    description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
-    specialties: ["Orthodontics", "Dentofacial Orthodontics"],
-    experience: 15,
+    name: "Dr. Sheetal Sharma",
+    edu: "B.D.S, M.I.D.A",
+    image: drSheetal,
+    description: "Specializing in clinical cosmetology and dental surgery, Dr. Sheetal is committed to enhancing smiles and confidence.",
+    specialties: ["Dental Surgeon", "Clinical Cosmetologist"],
+    experience: 8,
   },
 ]
 
