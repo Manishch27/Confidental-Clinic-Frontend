@@ -13,6 +13,7 @@ import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
 import drKajal from "@/public/dr-kajal.jpeg"
 import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
 import drVipin from "@/public/dr-vipin-sharma.jpeg"
+import drRitu from "@/public/dr-ritu.jpeg"
 
 const features = [
     {
@@ -84,9 +85,15 @@ const features = [
       role: "Clinical Cosmetologist",
       image: drSheetal,
       description: "Specializing in clinical cosmetology and dental surgery, Dr. Sheetal is committed to enhancing smiles and confidence.",
-    }
+    },
 
-  ]
+    {
+        name: "Dr. Ritu Agrawal",
+        image: drRitu,
+        description: "Specializing in the prevention, diagnosis, and treatment of gum disease, as well as advanced periodontal surgeries and dental implant placement for optimal oral health.",
+        role: "Periodontist"
+      },
+    ]
 
   export function FeatureItem({ feature, index }: { feature: typeof features[0]; index: number }) {
     return (

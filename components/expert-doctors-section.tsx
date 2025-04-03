@@ -8,6 +8,7 @@ import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
 import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
 import drVipin from "@/public/dr-vipin-sharma.jpeg"
 import drKajal from "@/public/dr-kajal.jpeg"
+import drRitu from "@/public/dr-ritu.jpeg"
 
 const doctors = [
   {
@@ -16,7 +17,7 @@ const doctors = [
     image: drPankaj,
     description: "Expert in dental surgery and implants, delivering precise care with over 10 years of experience.",
     specialties: ["Dental Surgeon", "Dental Implants"],
-    experience: 10,
+    experience: '10+',
   },
 
   {
@@ -25,7 +26,7 @@ const doctors = [
     image: drVipin,
     description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
     specialties: ["Orthodontics", "Dentofacial Orthodontics"],
-    experience: 15,
+    experience: '15+',
   },
 
   {
@@ -34,7 +35,7 @@ const doctors = [
     image: drSunil,
     description: "Specializes in oral and facial surgery, ensuring positive and gentle patient experiences.",
     specialties: ["Oral", "maxillofacial surgeon"],
-    experience: 12,
+    experience: '12+',
   },
   {
     name: "Dr. Sheetal Sharma",
@@ -42,7 +43,7 @@ const doctors = [
     image: drSheetal,
     description: "Specializing in clinical cosmetology and dental surgery, Dr. Sheetal is committed to enhancing smiles and confidence.",
     specialties: ["Dental Surgeon", "Clinical Cosmetologist"],
-    experience: 8,
+    experience: '8+',
   },
 
   {
@@ -51,7 +52,16 @@ const doctors = [
     image: drKajal,
     description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     specialties: ["Dental Surgeon", "Dental Implants"],
-    experience: 8,
+    experience: '8+',
+  },
+
+  {
+    name: "Dr. Ritu Agrawal",
+    edu: "B.D.S, M.D.S",
+    image: drRitu,
+    description: "Specializing in the prevention, diagnosis, and treatment of gum disease, as well as advanced periodontal surgeries and dental implant placement for optimal oral health.",
+    specialties: ["Periodontist", "Oral Implants"],
+    experience: '5+',
   },
 ]
 
