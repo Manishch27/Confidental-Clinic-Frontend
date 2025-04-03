@@ -7,7 +7,7 @@ import drPankaj from "@/public/dr-pankaj-chaudhary.jpeg"
 import drSunil from "@/public/dr-sunil-fauzdar.jpeg"
 import drSheetal from "@/public/dr-sheetal-sharma.jpeg"
 import drVipin from "@/public/dr-vipin-sharma.jpeg"
-
+import drKajal from "@/public/dr-kajal.jpeg"
 
 const doctors = [
   {
@@ -42,6 +42,15 @@ const doctors = [
     image: drSheetal,
     description: "Specializing in clinical cosmetology and dental surgery, Dr. Sheetal is committed to enhancing smiles and confidence.",
     specialties: ["Dental Surgeon", "Clinical Cosmetologist"],
+    experience: 8,
+  },
+
+  {
+    name: "Dr. Kajal",
+    edu: "B.D.S, M.D.S",
+    image: drKajal,
+    description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
+    specialties: ["Dental Surgeon", "Dental Implants"],
     experience: 8,
   },
 ]

@@ -63,11 +63,9 @@ const features = [
     },
     {
         name: "Dr. Vipin Sharma",
-        edu: "B.D.S, M.D.S",
         image: drVipin,
-        description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
-        specialties: ["Orthodontics", "Dentofacial Orthodontics"],
-        experience: 15,
+        role: "Orthodontics",
+        description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles."
       },
     {
       name: "Dr. Sunil Fauzdar",
