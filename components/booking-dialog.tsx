@@ -50,7 +50,7 @@ export function BookingDialog() {
     try {
       const response = await axios.post(`${API_URL}api/v1/form/popup-form`, data)
       if (response.status === 200) {
-        toast.success("Your 20% discount is applied! Please visit us.")
+        toast.success("Your 20% discount is ready! Please visit us.")
         setHasSubmitted(true)
         localStorage.setItem('hasSeenBookingDialog', 'true')
         setOpen(false)
