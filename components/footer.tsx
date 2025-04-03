@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Heart } from 'lucide-react'
+import { ArrowRight, Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Heart, Hourglass, Headset} from 'lucide-react'
 import { useTheme } from "next-themes"
 
 const quickLinks = [
@@ -16,7 +16,7 @@ const quickLinks = [
 
 const contactInfo = [
   {
-    icon: <Phone className="h-5 w-5" />,
+    icon: <Headset className="h-5 w-5" />,
     label: "For Inquiry",
     value: "+91 05653553881"
   },
@@ -43,7 +43,7 @@ const contactInfo = [
   },
 
   {
-    icon: <Clock className="h-5 w-5" />,
+    icon: <Hourglass className="h-5 w-5" />,
     label: "Working Hours",
     value: "Sun, 10:00 AM - 2:00 PM",
   },
