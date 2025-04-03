@@ -57,7 +57,8 @@ export function BookingDialog() {
       } else {
         toast.error("Failed to submit booking. Please try again.")
       }
-    } catch (error) {
+    } catch (error){
+      console.log(error);
       toast.error("An error occurred while submitting your booking.")
     }
     setIsSubmitting(false)
