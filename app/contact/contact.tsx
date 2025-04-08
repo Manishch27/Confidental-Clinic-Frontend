@@ -31,7 +31,7 @@ const clinics = {
         {
           icon: <MapPin className="h-6 w-6" />,
           label: "Address",
-          value: "123 Balajipuram Main Road, Mathura, UP 281001",
+          value: "S-17/18 Balajipuram Colony NH-19, Mathura, UP 281006",
           description: "Visit us in person"
         },
         {
@@ -62,12 +62,6 @@ const clinics = {
           icon: <MapPin className="h-6 w-6" />,
           label: "Address",
           value: "47A, B.R. Town, Near Shri Radha Town, Mathura, UP 281001",
-          description: "Visit us in person"
-        },
-        {
-          icon: <MapPin className="h-6 w-6" />,
-          label: "Address",
-          value: "S-17/18 Balajipuram Colony NH-19, Mathura, UP 281006",
           description: "Visit us in person"
         },
         {
