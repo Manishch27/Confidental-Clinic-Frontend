@@ -18,12 +18,12 @@ const contactInfo = [
   {
     icon: <Headset className="h-5 w-5" />,
     label: "For Inquiry",
-    value: "+91 05653553881"
+    value: "+91 8979443448"
   },
   {
     icon: <Phone className="h-5 w-5" />,
     label: "24/7 Emergency",
-    value: "+91 05653553881"
+    value: "+91 8979443448"
   },
   {
     icon: <Mail className="h-5 w-5" />,
