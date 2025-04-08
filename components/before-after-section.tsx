@@ -74,14 +74,14 @@ function BeforeAfterSlider({ beforeImage, afterImage, beforeAlt, afterAlt, title
       className="relative overflow-hidden rounded-2xl shadow-lg"
     >
       <div className="relative h-[400px] w-full overflow-hidden">
-        <Image src={afterImage} alt={afterAlt} fill className="object-cover focus:outline-none" />
+        <Image src={afterImage} alt={afterAlt} fill className="object-fit focus:outline-none" />
         <div
           className="absolute inset-0 transition-transform duration-500 ease-in-out"
           style={{
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)`,
           }}
         >
-          <Image src={beforeImage} alt={beforeAlt} fill className="object-cover focus:outline-none" />
+          <Image src={beforeImage} alt={beforeAlt} fill className="object-fit object-bottom focus:outline-none" />
         </div>
         <div
           className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"

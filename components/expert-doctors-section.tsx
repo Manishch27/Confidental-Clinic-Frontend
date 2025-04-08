@@ -26,7 +26,7 @@ const doctors = [
     image: drVipin,
     description: "Specializing in orthodontics, Dr. Vipin is passionate about creating beautiful smiles.",
     specialties: ["Orthodontics", "Dentofacial Orthodontics"],
-    experience: '15+',
+    experience: '10+',
   },
 
   {
@@ -48,7 +48,7 @@ const doctors = [
 
   {
     name: "Dr. Kajal",
-    edu: "B.D.S, M.D.S",
+    edu: "B.D.S",
     image: drKajal,
     description: "Dr. Kajal Skilled in oral surgeries and implants, focused on advanced procedures and patient care.",
     specialties: ["Dental Surgeon", "Dental Implants"],

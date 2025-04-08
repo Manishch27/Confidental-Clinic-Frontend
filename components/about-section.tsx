@@ -44,7 +44,7 @@ const features = [
 
 const stats = [
   { value: "10+", label: "Years of Excellence" },
-  { value: "15k+", label: "Happy Patients" },
+  { value: "20k+", label: "Happy Patients" },
   { value: "10+", label: "Expert Dentists" },
 ]
 

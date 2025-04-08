@@ -76,17 +76,17 @@ export function StatsSection() {
     {
       icon: <Activity className="h-8 w-8" />,
       label: "Root Canals",
-      value: 2500,
+      value: 15000,
     },
     {
       icon: <Baby className="h-8 w-8" />,
       label: "Kids Cases",
-      value: 1000,
+      value: 5000,
     },
     {
       icon: <Star className="h-8 w-8" />,
       label: "Orthodontic Cases",
-      value: 5000,
+      value: 1000,
     },
   ]
 

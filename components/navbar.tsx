@@ -115,7 +115,7 @@ export function Navbar() {
                   <Phone className="h-4 w-4" />
                 </div>
                 <div className="text-sm">
-                  <a href="tel:9105652444007"><p className="font-medium">+91 05652444007</p></a>
+                  <a href="tel:9105652444007"><p className="font-medium">+91 8979443448</p></a>
                   <p className="text-xs text-muted-foreground">24/7 Emergency</p>
                 </div>
               </div>
