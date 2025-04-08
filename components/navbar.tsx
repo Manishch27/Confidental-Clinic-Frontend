@@ -204,7 +204,7 @@ export function Navbar() {
                               <Phone className="h-5 w-5" />
                             </div>
                             <div>
-                              <p className="font-medium text-blue-600 dark:text-blue-300">+91 05652444007</p>
+                              <p className="font-medium text-blue-600 dark:text-blue-300">+91 8979443448</p>
                               <p className="text-sm text-blue-500 dark:text-blue-400">24/7 Emergency</p>
                             </div>
                           </div>
