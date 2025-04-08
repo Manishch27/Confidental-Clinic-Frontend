@@ -124,7 +124,7 @@ export function Navbar() {
                   <Clock className="h-4 w-4" />
                 </div>
                 <div className="text-sm">
-                  <p className="font-medium">Monday - Friday</p>
+                  <p className="font-medium">Monday - Saturday</p>
                   <p className="text-xs text-muted-foreground">10:00 - 2PM, 4:00 - 8PM</p>
                 </div>
               </div>

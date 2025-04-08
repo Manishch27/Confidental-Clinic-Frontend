@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Heart, Hourglass, Headset} from 'lucide-react'
+import { ArrowRight, Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Heart, Hourglass, Headset, MapPinCheck} from 'lucide-react'
 import { useTheme } from "next-themes"
 
 const quickLinks = [
@@ -33,7 +33,12 @@ const contactInfo = [
   {
     icon: <MapPin className="h-5 w-5" />,
     label: "Visit Us",
-    value: "123 Balajipuram Main Road, Mathura, UP 281001",
+    value: "47A, B.R. Town, Near Shri Radha Town, Mathura, UP 281001",
+  },
+  {
+    icon: <MapPinCheck className="h-5 w-5" />,
+    label: "Visit Us",
+    value: "S-17/18 Balajipuram Colony NH-19, Mathura, UP 281006",
   },
   
   {
